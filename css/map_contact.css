@@ -1,0 +1,45 @@
+hr {border-top: 1px solid #000; width:50%;}
+hrn {border-top: 1px solid #000; width:100%;}
+a {color: #000;}
+
+a:link{text-decoration:none;}
+
+#contact2{
+    letter-spacing:3px;
+}
+
+.headmap{
+  font-size: 70px
+}
+
+#author a{
+  color: #fff;
+  text-decoration: none;
+    
+}
+.map-contact{
+  padding-top: 13vh;
+}
+@media only screen 
+    and (min-device-width : 320px) 
+    and (max-device-width : 480px){ 
+      .map-contact {
+        padding-top: 2vh;
+        text-align: center;
+      }
+      .headmap{font-size: 28px}
+      iframe{height: 200;}
+  }
+  @media only screen 
+  and (max-device-width : 320px) 
+  and (max-device-height : 568px){ 
+    .map-contact {
+      padding-top: 0;
+      text-align: center;
+    }
+    .headmap{font-size: 28px}
+    iframe{height: 120;}
+}
+input{
+  text-align:center;
+}
