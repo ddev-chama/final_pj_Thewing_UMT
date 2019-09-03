@@ -18,7 +18,7 @@ a:link{text-decoration:none;}
     
 }
 .map-contact{
-  padding-top: 13vh;
+  padding-top: 3vh;
 }
 @media only screen 
     and (min-device-width : 320px) 
@@ -42,4 +42,21 @@ a:link{text-decoration:none;}
 }
 input{
   text-align:center;
+}
+@media only screen 
+and (max-device-width : 1366px) 
+and (max-device-height : 768px){ 
+  .map-contact{
+    padding-top: 0vh;
+  }
+}
+@media only screen 
+and (min-device-width : 481px) 
+and (max-device-width : 765px){ 
+  .map-contact {
+    padding-top: 0;
+    text-align: center;
+  }
+  .headmap{font-size: 28px}
+  iframe{height: 120;}
 }
