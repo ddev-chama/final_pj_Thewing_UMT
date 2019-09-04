@@ -8,7 +8,6 @@
  <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="js/onepagescroll.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@8"></script>
     <script src="js/menu.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="js/onepagescroll.min.js"></script>
@@ -137,19 +136,3 @@
   $(".map-contact").load("map_contact.html");
   </script>
 <?
-if($_GET["status"] == "success"){
-?>
-<script>
-Swal.fire({
-  position: 'top-end',
-  type: 'success',
-  title: 'Your work has been saved',
-  showConfirmButton: false,
-  timer: 1500.
-
-})
-
-</script>
-<?
-}  
-?>

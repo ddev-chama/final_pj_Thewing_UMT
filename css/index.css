@@ -143,6 +143,9 @@ p {
 .btn-green {
     background-color: #4CAF50;
 }
+iframe{
+    overflow-y: scroll;
+}
 @media screen and (max-device-width: 480px) and (orientation: portrait) {
     .logo img{
         padding-top: 50px;

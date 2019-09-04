@@ -1,3 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@8"></script>
+</head>
+<body>
+    
+</body>
+</html>
+
 <?php
 $s = 1;
 if(empty($_POST["UtypeB"] || $_POST["UPhone"] || $_POST["Uemail"] || $_POST["Uname"])){ 
@@ -42,9 +56,9 @@ $mail->Password = "Earth123@";
 //Set who the message is to be sent from
 $mail->setFrom('ddev.chama@gmail.com', 'Thewing_Alert');
 //Set who the message is to be sent to
-$mail->addAddress('ak3167@gmail.com', 'Chama');
+$mail->addAddress('hello@miraimai.com', 'Admin');
 //Set the subject line
-$mail->Subject = 'Message from '.$client_msg_name;
+$mail->Subject = 'Message from '.$client_msg_mail;
 //Read an HTML message body from an external file, convert referenced images to embedded,
 //convert HTML into a basic plain-text alternative body
 //$mail->msgHTML(file_get_contents('content.html'), dirname(__FILE__));
@@ -54,8 +68,23 @@ $mail->msgHTML("ผู้สนใจ :".$client_msg_name."<br>ประเภ�
 if (!$mail->send()) {
     echo "Mailer Error: " . $mail->ErrorInfo;
 } else {
-    echo "Message sent!";
-    header("location:index.php?status=success")
+    ?>
+    <script>
+    Swal.fire({
+    type: 'success',
+    title:'Success',
+    text: 'Thanks so much for your message',
+    showConfirmButton: false,
+    timer: 2000,
+    onClose: href_page 
+
+    })
+    function href_page(){
+    location.href = "index.php";
+    }
+    </script>
+        <?php
+
 }
 
 }//end_else
